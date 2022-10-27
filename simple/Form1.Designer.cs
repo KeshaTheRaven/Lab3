@@ -37,7 +37,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 58);
+            this.label1.Location = new System.Drawing.Point(12, 56);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 15);
             this.label1.TabIndex = 0;
@@ -46,14 +46,15 @@
             // 
             // tbName
             // 
-            this.tbName.Location = new System.Drawing.Point(112, 55);
+            this.tbName.Location = new System.Drawing.Point(112, 53);
             this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(181, 23);
+            this.tbName.Size = new System.Drawing.Size(174, 23);
             this.tbName.TabIndex = 1;
             // 
             // Hello
             // 
-            this.Hello.Location = new System.Drawing.Point(12, 109);
+            this.Hello.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Hello.Location = new System.Drawing.Point(5, 101);
             this.Hello.Name = "Hello";
             this.Hello.Size = new System.Drawing.Size(281, 28);
             this.Hello.TabIndex = 2;
@@ -63,7 +64,8 @@
             // 
             // Exit
             // 
-            this.Exit.Location = new System.Drawing.Point(12, 143);
+            this.Exit.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Exit.Location = new System.Drawing.Point(5, 135);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(281, 28);
             this.Exit.TabIndex = 3;
@@ -75,11 +77,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(318, 204);
+            this.ClientSize = new System.Drawing.Size(298, 175);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.Hello);
             this.Controls.Add(this.tbName);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(314, 214);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(314, 214);
             this.Name = "Hi";
             this.Text = "Hi";
             this.ResumeLayout(false);
